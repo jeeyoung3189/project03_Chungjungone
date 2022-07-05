@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <!-- <link rel="stylesheet" href="./common.css"> -->
+    <link rel="stylesheet" href="./common2.css">
+
+    <!-- <script>
+        $('.brand_txt>span').on('click', function(){
+            let nth = $(this).index()
+            console.log(nth)
+            $('.brand_txt>span').removeClass('on')
+            $('.brand_txt>span').eq(nth).addClass('on')
+
+            $('.brand_list>div').removeClass('on')
+            $('.brand_list>div').eq(nth).addClass('on')
+        })
+    </script> -->
+</head>
+ 
+<body>
+    <div class="inner">
+        <header class="hd">
+            <h1 class="logo"><img src="./img/logo1_청정원.png" alt="로고"></h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">브랜드</a>
+                        <ul class="sub">
+                            <li><a href="#">청정원</a></li>
+                            <li><a href="#">호밍스</a></li>
+                            <li><a href="#">안주야</a></li>
+                            <li><a href="#">순창</a></li>
+                            <li><a href="#">카레여왕</a></li>
+                            <li><a href="#">햇살담은</a></li>
+                            <li><a href="#">홍초</a></li>
+                            <li><a href="#">맛선생</a></li>
+                            <li><a href="#">TV CF</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">제품</a>
+                        <ul class="sub">
+                            <li><a href="#">전체정보</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">레시피</a>
+                        <ul class="sub">
+                            <li><a href="#">청정원레시피</a></li>
+                            <li><a href="#">식탁이 있는 풍경</a></li>
+                            <li><a href="#">푸드캐스트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">뉴스</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이달의식단</a></li>
+                            <li><a href="#">청정원 할인쿠폰</a></li>
+                            <li><a href="#">청정원now</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ham">
+                <span>1</span>
+                <span>1</span>
+                <span>1</span>
+            </div>
+        </header>
+        <section class="main_banner">
+            <h2 hidden>video_banner</h2>
+            <video id="video" muted autoplay loop>
+                <source src="./img/sec1.mp4">
+            </video>
+            <div class="bn_txt">
+                <span>청<br>정<br>원<br></span>
+                <p>신선하고 깨끗한 자연을<br>정성스럽게<br>담다</p>
+            </div>
+        </section>
+        <section class="introduce">
+            <div class="intro_txt">
+                <h2>더 나은 맛&#44; 더 맛있는 인생 </h2>
+                <p>The Better Tasting Life</p>
+                <p>음식을 둘러싼 당신의 삶이 더 맛있어지도록&#44;<br>함께 발맞춰가는 라이프푸드&#91;Life Food&#93;브랜드&#44; 청정원입니다&#46;</p>
+            </div>
+            <div class="introduce_list">
+                <div class="intro_brand">
+                    <div class="int_img"><img src="./img/sec2_img1.jpg" alt="브랜드관련이미지"></div>
+                    <span>Brand</span>
+                    <span>7</span>
+                    <p>발효 식품부터 안주까지<br>7개의 다양한 식품 브랜드 </p>
+                </div>
+                <div class="intro_history">
+                    <div class="int_img"><img src="./img/sec2_img2.jpg" alt="회사관련이미지"></div>
+                    <span>History</span>
+                    <span>1996</span>
+                    <p>신선하고 깨끗한 가족을 위한<br>건강한 식탁을 제한하겠다는 의지로 1996년에 런칭</p>
+                </div>
+                <div class="intro_life">
+                    <div class="int_img"><img src="./img/sec2_img3.jpg" alt="음식이미지"></div>
+                    <span>Life</span>
+                    <span>Good</span>
+                    <p>맛과 영양이 가득한 요리로 풍요롭게<br>완성시키는 대한민국 대표 종합 식품 전문 브랜드</p>
+                </div>
+            </div>
+        </section>
+        <section class="brand">
+            <div class="brand_txt">
+                <h2>청정원의<br>7가지 브랜드</h2>
+                <span class="on">순창</span>
+                <span>호밍스</span>
+                <span>맛선생</span>
+                <span>카레여왕</span>
+                <span>햇살담은</span>
+                <span>안주야</span>
+                <span>홍초</span>
+            </div>
+            <div class="brand_list">
+                <div class="brand_1 on">
+                    <p>맛있는 발효숙성</p>
+                    <div class="br_img"><img src="./img/sec3_img1.png" alt="순창상품이미지"></div>
+                    <a href="#">자세히보기&#62;</a>
+                    <p>깨끗한 원료와 정통의 제조 공법을 사용하여<br>맛과 건강까지 생각한 순창 고추장입니다.</p>
+                </div>
+                <div class="brand_2">
+                    <p>맛있는 한끼</p>
+                    <div class="br_img"><img src="./img/sec3_img2.png" alt="호밍스상품이미지"></div>
+                    <a href="#">자세히보기&#62;</a>
+                    <p>밥류부터 국탕찌개, 메인요리까지 제대로 된 식사를<br>통한 만족감을 주는 가정 간편식 호밍스</p>
+                </div>
+                <div class="brand_3">
+                    <p>맛있는 자연재료</p>
+                    <div class="br_img"><img src="./img/sec3_img3.png" alt="맛선생상품이미지"></div>
+                    <a href="#">자세히보기&#62;</a>
+                    <p>자연재료 조미료 맛선생으로 쉽고 편리하게<br>우리집 식탕을 건강하게 바꿔보세요.</p>
+                </div>
+                <div class="brand_4">
+                    <p>프리미엄 카레</p>
+                    <div class="br_img"><img src="./img/sec3_img4.png" alt="카레여왕상품이미지"></div>
+                    <a href="#">자세히보기&#62;</a>
+                    <p>쌀로 만든 웰빙 청정원 카레여왕 '여왕의 방식' 퐁드보 육수로<br>만들어 깊고 부드러운 프리미엄 카레</p>
+                </div>
+                <div class="brand_5">
+                    <p>특허받은 공법</p>
+                    <div class="br_img"><img src="./img/sec3_img5.png" alt="햇살담은상품이미지"></div>
+                    <a href="#">자세히보기&#62;</a>
+                    <p>'2단 달임공법'은 간장 본연의 감칠맛과 진한 풍미를<br>살린 청정원 진간장만의 맛있는 비법입니다.</p>
+                </div>
+                <div class="brand_6">
+                    <p>간편한 안주맛집</p>
+                    <div class="br_img"><img src="./img/sec3_img6.png" alt="안주야상품이미지"></div>
+                    <a href="#">자세히보기&#62;</a>
+                    <p>대표 안주 맛집 스타일을 가졍편의식 안주야로 재해석해<br>간편하게 전문점 안주를 즐길 수 있습니다.</p>
+                </div>
+                <div class="brand_7">
+                    <p>건강한 일상음료</p>
+                    <div class="br_img"><img src="./img/sec3_img7.png" alt="홍초상품이미지"></div>
+                    <a href="#">자세히보기&#62;</a>
+                    <p>발효식초 복합물 홍초와 함께<br>일상의 확력을 느껴보세요.</p>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="news_txt">
+                <h2>청정원 NOW</h2>
+                <p>청정원의 새롭고 다양한 소식을 전해드립니다.</p>
+                <button>more&#43;</button>
+            </div>
+            <div class="news_list">
+                <div class="news_1">
+                    <a href="#"><img src="./img/sec4_img1.png" alt="유튜브썸네일"></a>
+                    <a href="#">&#35; youtube</a>
+                    <a href="#">&#35; &#91;호밍스X메인요리&#93; 호메&#46;&#46;&#33; 그것은&#33;</a>
+                    <span>2021.12</span>
+                </div>
+                <div class="news_2">
+                    <a href="#"><img src="./img/sec4_img2.png" alt="호밍스썸네일"></a>
+                    <a href="#">&#35; 청정원 now</a>
+                    <a href="#">&#35; 호밍스가 우리동네에 이사왔어요&#33;</a>
+                    <span>2021.12</span>
+                </div>
+                <div class="news_3">
+                    <a href="#"><img src="./img/sec4_img3.png" alt="유튜브썸네일"></a>
+                    <a href="#">&#35; youtube</a>
+                    <a href="#">&#35; &#91;청정원X호밍스&#93; 잠깐 쉬어요&#33; &#40;보너스 공개 &#124; EP&#46;3&#41;</a>
+                    <span>2021.12</span>
+                </div>
+            </div>
+        </section>
+        <footer class="ft">
+            <div class="ft_link">
+                <p class="link_list">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이메일주소무단수집거부</a>
+                    <a href="#">공지사항</a>
+                    <a href="#">SNS</a>
+                </p>
+                <ul class="family">
+                    <li>
+                        <button>패밀리 사이트</button>
+                        <ul>
+                            <li><a href="#">대상 홈페이지</a></li>
+                            <li><a href="#">정원e샵 쇼핑몰</a></li>
+                            <li><a href="#">대상 웰라이프</a></li>
+                            <li><a href="#">청정원 블로그</a></li>
+                            <li><a href="#">종가집 사이트</a></li>
+                            <li><a href="#">오푸드 글로벌</a></li>
+                            <li><a href="#">종가집 글로벌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="ft_txt">
+                <div><img src="./img/ftlogo1_청정원.png" alt="하단로고"></div>
+                <div>
+                    <div class="top_txt">
+                        <span>대상(주)</span>
+                        <span>사업자등록번호 109-81-14886</span>
+                        <span>대표이사 임정배</span>
+                        <span>주소 서울시 종로구 창경궁로120(인의동)</span>
+                    </div>
+                    <div class="low_txt">
+                        <span>제품관련고객상담 080-019-9119</span>
+                        <span>상담시간 평일 09:00~17:30(토,일요일,공휴일 휴무)</span>
+                        <span>개인정보 보호 책임자 윤한권 </span>
+                    </div>
+                    <span>COPYRIGHT 청정원. ALL RIGHTS RESERVED.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
